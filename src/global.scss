@@ -24,3 +24,9 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-button{
+  --border-width: 1px;
+  --border-radius: 2px;
+  text-transform: none !important;
+}
