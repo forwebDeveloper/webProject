@@ -1,50 +1,35 @@
 <ion-content>
-  <!-- Default -->
-  <ion-button>Default</ion-button>
+  <div class="row">
 
-  <!-- Anchor -->
-  <ion-button href="#">Anchor</ion-button>
+    <div class="col-6 d-none d-lg-flex align-items-center py-5" style="height: 100vh;">
+      <div class="w-100 imgHome pt-5"></div>
+    </div>
 
-  <!-- Colors -->
-  <ion-button color="primary">Primary</ion-button>
-  <ion-button color="secondary">Secondary</ion-button>
-  <ion-button color="tertiary">Tertiary</ion-button>
-  <ion-button color="success">Success</ion-button>
-  <ion-button color="warning">Warning</ion-button>
-  <ion-button color="danger">Danger</ion-button>
-  <ion-button color="light">Light</ion-button>
-  <ion-button color="medium">Medium</ion-button>
-  <ion-button color="dark">Dark</ion-button>
+    <div class="col-12 col-lg-6 d-flex align-items-center py-5" style="height: 100vh;">
+      <div class="w-100 loginHome d-flex align-items-center px-5">
+        <div style="width: 320px;">
+          <div class="text-center">
+            <h2 class="h2 mt-0 p-0 mb-3 font-weight-light">Bienvenido!</h2>
+          </div>
 
-  <!-- Expand -->
-  <ion-button expand="full">Full Button</ion-button>
-  <ion-button expand="block">Block Button</ion-button>
+          <form>
+            <input type="email" class="form-control mb-2" placeholder="Email">
+            <input [type]="typeInput" class="form-control" placeholder="Password">
+          </form>
 
-  <!-- Round -->
-  <ion-button shape="round">Round Button</ion-button>
+          <ion-button expand="block" class="mt-2" color="primary" fill="solid">
+            <fa-icon [icon]="faSync" class="mr-2"></fa-icon> Entrar
+          </ion-button>
 
-  <!-- Fill -->
-  <ion-button expand="full" fill="outline">Outline + Full</ion-button>
-  <ion-button expand="block" fill="outline">Outline + Block</ion-button>
-  <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+          <div class="text-center mt-2">
+            <button type="button" class="btn btn-link text-muted btn-sm" style="text-decoration:underline;">
+              ¿Has olvidado tu contraseña?
+            </button>
+          </div>
 
-  <!-- Icons -->
-  <ion-button>
-    <ion-icon slot="start" name="star"></ion-icon>
-    Left Icon
-  </ion-button>
+        </div>
+      </div>
+    </div>
 
-  <ion-button>
-    Right Icon
-    <ion-icon slot="end" name="star"></ion-icon>
-  </ion-button>
-
-  <ion-button>
-    <ion-icon slot="icon-only" name="star"></ion-icon>
-  </ion-button>
-
-  <!-- Sizes -->
-  <ion-button size="large">Large</ion-button>
-  <ion-button>Default</ion-button>
-  <ion-button size="small">Small</ion-button>
+  </div>
 </ion-content>
